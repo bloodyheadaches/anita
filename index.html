@@ -1,0 +1,130 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<script src="https://kit.fontawesome.com/a14ae32021.js" crossorigin="anonymous"></script>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Anita</title>
+
+<style type="text/css">
+@font-face {
+	font-family: digit;
+	src: url('digital-7_mono.ttf') format("truetype");
+}
+</style>
+<link href="css/default.css" type="text/css" rel="stylesheet">
+<script type="text/javascript" src="js/jquery.js"></script>
+<script type="text/javascript" src="js/garden.js"></script>
+<script type="text/javascript" src="js/functions.js"></script>
+
+</head>
+
+<body>
+
+<div id="startScreen">
+	<div id="startText">Click/Cualquier tecla para empezar. ^^</div>
+</div>
+
+<div id="mainDiv">
+    	<div id="loveHeart">
+		<canvas id="garden"></canvas>
+		<div id="code">
+			<div id="codeInner">
+			<span class="comments">...                     ...                     ...                     </span><br />
+			<span class="comments">                     1708                     </span>
+			<br /><br /><br /><br />                     
+			Que lindo poder estar juntos en esta fecha,                     <br />
+			me llena de felicidad ver nuestro progreso.                     <br />
+			<br /><br /><br /><br />
+			El ambiente tan saludable que logramos<br />
+			construir alrededor nuestro,<br />
+			<br /><br />
+			♡      ♡      ♡      <br />
+			      nos sirve mucho para <br />
+			esos dias dificiles a futuro      .      .      .                     <br />
+			<span class="space"><span class="comments">//disfruto de compartir contigo #"!#$%</span><br />
+			<span class="space"><span class="comments">//agradezco muchisimo esa partecita tuya, mor                     </span><br />
+			<br /><br /><br /><br />
+			ESTE tipo de comunicación me llena de seguridad,      <br />
+			siempre me acompañas a donde sea que vaya,<br />
+			nos tratamos igual que el primer día.<br />
+			<span class="space"><span class="string">'tus logros son mis logros, ani^^'</span><br />
+			<span class="space"><span class="comments">//Te adoro, aprecio muchisimo tu presencia.      </span><br />
+			<br /><br /><br /><br />
+			Cuando platicamos, debatimos      .      .      .      juntos                           <br />
+			siento que comenzamos cada charla<br />
+			totalmente abiertos de alma.      <br />
+			<span class="space"><span class="comments">//me hace ver lo facil y comodo que es</span><br />
+			<span class="space"><span class="comments">//conversar si ambos queremos escucharnos.                     </span><br />
+			<br /><br /><br /><br />
+			Siempre estuve acá      mor,                            y voy a quedarme acá.                      <br />
+			<span class="space"><span class="string">'amo que desde chicos supimos entendernos,</span><br />
+			<span class="space"><span class="string">siempre disfruté de tenerte en mi vida'</span><br />
+			<span class="comments">// Gracias por elejirnos el uno al otro</span><br />
+			<span class="comments">// diariamente muejejej</span><br />
+			♡      ♡      ♡      <br />	
+			</div>
+		</div>
+		<div id="pusheenWrap">
+			<img id="pusheen" src="just pusheen.png" onclick="startGame()" />
+			<div id="clickHint" style="display:none;"></div>
+		</div>
+
+	</div>
+</div>
+
+<div id="gameScreen">
+
+	<div id="catchBarWrap">
+		<div id="catchBarLabel">LA GORDA SE LLEVO NUESTRO CERTIFICADO DE CASAMIENTO¡!¡!¡¡!"#!</div>
+		<div id="catchBarTrack">
+			<div id="catchBar"></div>
+			<img id="pusheenBarIcon" src="pusheen-papers.png" />
+		</div>
+	</div>
+
+	<div id="street">
+		<div id="streetBg"></div>
+		<div id="playerChar"><img src="player.png" id="playerImg" /></div>
+		<img id="pusheenGame" src="pusheen-papers.png" />
+	</div>
+
+	<div id="spamHint">A + D para correr</div>
+
+</div>
+
+<div id="winScreen">
+	<div id="winInner"></div>
+
+	<div id="winPusheenWrap">
+		<img id="winPusheen" src="pusheen-papers.png" />
+		<div id="winClickHint"></div>
+	</div>
+</div>
+
+<div id="certOverlay">
+	<img src="cert.png" />
+</div>
+
+<script type="text/javascript">
+if (!document.createElement('canvas').getContext) {
+	var msg = document.createElement("div");
+	msg.id = "errorMsg";
+	msg.innerHTML = "Your browser doesn't support HTML5!<br/>Recommend use Chrome 14+/IE 9+/Firefox 7+/Safari 4+";
+	document.body.appendChild(msg);
+	$("#code").css("display", "none");
+	document.execCommand("stop");
+} else {
+	setTimeout(function () {
+		startHeartAnimation();
+	}, 300);
+}
+</script>
+
+
+
+
+
+
+</script>
+</body>
+</html>
